@@ -6,7 +6,7 @@ function id($token,$jumlah,$wait) {
 
 	$rand 	= rand(1,99999);
     $ch 	= curl_init();
-	curl_setopt($ch, CURLOPT_URL, "https://api.indkota.com/Content/Content/read?member_token='.$token.'&content_id=$rand&lang=indonesian&device_id=865643032993991$rand");
+	curl_setopt($ch, CURLOPT_URL, "https://api.indkota.com/Content/Content/read?member_token='.$token.'&content_id=$rand&lang=indonesian&device_id=$rand");
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
@@ -21,7 +21,6 @@ function id($token,$jumlah,$wait) {
 
 echo "Token ?\nInput : ";
 $token = trim(fgets(STDIN));
-$token = 'NjIwODk1MzM5Njc3NjMyLS18fC0tYzllNGI0M2ZjNDM0ZmVjMWZlZmQ0ZmE5MjYwNjk1ZjU';
 echo "Jumlah ?\nInput : ";
 $jumlah = trim(fgets(STDIN));
 echo "Jeda ?(ex:0)\nInput : ";
