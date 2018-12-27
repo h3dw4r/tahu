@@ -29,7 +29,6 @@ $result = curl_exec($ch); curl_close ($ch);
 echo $result."\n"; sleep($wait); $x++;
 flush(); } } echo "Token ?\nInput : ";
 $token = trim(fgets(STDIN));
-$token = 'NjIwODk1MzM5Njc3NjMyLS18fC0tYzllNGI0M2ZjNDM0ZmVjMWZlZmQ0ZmE5MjYwNjk1ZjU';
 echo "Jumlah ?\nInput : ";
 $jumlah = trim(fgets(STDIN));
 echo "Jeda ?(ex:0)\nInput : ";
