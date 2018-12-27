@@ -152,10 +152,8 @@ print"$ijo
 ========================================================\n$biru";
 echo "Member Token : ";
 $member_token = trim(fgets(STDIN));
-$member_token = "NjIwODk1MzM5Njc3NjMyLS18fC0tYzllNGI0M2ZjNDM0ZmVjMWZlZmQ0ZmE5MjYwNjk1ZjU";
 echo "Device ID : ";
 $device_id = trim(fgets(STDIN));
-$device_id = "865643032993991";
 if ($member_token == "") {
 	die ("$red Member token cannot be blank!\n");
 } elseif($device_id == "") {
